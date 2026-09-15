@@ -2,7 +2,7 @@ import json, sys, urllib.request, urllib.error
 
 DOMAIN = input("Enter your Signals tenant subdomain: ")
 HOST = f"https://{DOMAIN}.signalsresearch2.revvitycloud.com/api/rest/v1.0"
-UID = "206"
+UID = input("Enter user's ID: ")
 KEY = input("Enter your API key: ")
 
 def call(method, url, body=None):
